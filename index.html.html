@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Business Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        .card {
+            background-color: #fff;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card h1, .card h2 {
+            color: #333;
+        }
+        .card p {
+            color: #666;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #22448C;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+        .button:last-child {
+            margin-right: 0;
+        }
+        .button:hover {
+            background-color: #1A366F;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="http://www.saral-info.com/saral-info/wp-content/uploads/2019/12/weblogo-1.png" alt="Company Logo" style="width: 100px; height: auto;">
+        <h1>Saral Information Technology Pvt. Ltd.</h1>
+        <h2>Rohitt Sharma</h2>
+        <div class="contact-info">
+            <p>Phone: +91-8209099874</p>
+            <p>Email: rohittsharma56@gmail.com</p>
+            <p>Address: A-606, STELLAR, Sindhu Bhavan Marg, Friends Colony, Bodakdev, Ahmedabad, Gujarat 380054</p>
+        </div>
+        <a href="tel:+918209099874" class="button">Call Now</a>
+        <a href="mailto:rohittsharma56@gmail.com" class="button">Email</a>
+        <a href="javascript:void(0);" onclick="addToContacts()" class="button">Add to Contact</a>
+        <a href="http://www.saral-info.com/" class="button">Visit Website</a>
+    </div>
+
+    <script>
+        function addToContacts() {
+            alert('Contact added to your device!');
+        }
+    </script>
+</body>
+</html>
